@@ -1,20 +1,23 @@
 from turtle import *  # Import the turtle module
 
+# Define a scaling factor
+scale_factor = 0.5  # Adjust this as needed
+
 # Set the background color of the screen
-screensize(400, 400, '#1E1A29')
+screensize(400 * scale_factor, 400 * scale_factor, '#1E1A29')
 
 # Set the pen size and color for the border of the logo
-pensize(2)
+pensize(2 * scale_factor)
 pencolor('#870064')
 
 # Define the coordinates for the upper and lower parts of the letter 'T'
-letterTUpper = [140, 26, 306, 26, 140]
-letterTLower = [280, 26, 280]
+letterTUpper = [140 * scale_factor, 26 * scale_factor, 306 * scale_factor, 26 * scale_factor, 140 * scale_factor]
+letterTLower = [280 * scale_factor, 26 * scale_factor, 280 * scale_factor]
 
 # Draw the first 'T' letter
 fillcolor('#EE3FB0')  # Set the fill color to pink
 penup()
-goto(-55, 325)  # Move the pen to the starting position
+goto(-55 * scale_factor, 325 * scale_factor)  # Move the pen to the starting position
 pendown()
 begin_fill()
 
@@ -34,7 +37,7 @@ end_fill()
 
 # Draw the second 'T' letter
 penup()
-goto(0, 273)
+goto(0 * scale_factor, 273 * scale_factor)
 pendown()
 begin_fill()
 
@@ -53,13 +56,13 @@ for i in letterTLower:
 end_fill()
 
 # Define the coordinates for the upper and lower parts of the second letter 'T'
-secondLetterTUpper = [105, 18, 230, 18, 105]
-secondLetterTLower = [210, 18, 210]
+secondLetterTUpper = [105 * scale_factor, 18 * scale_factor, 230 * scale_factor, 18 * scale_factor, 105 * scale_factor]
+secondLetterTLower = [210 * scale_factor, 18 * scale_factor, 210 * scale_factor]
 
 # Draw the first 'T' letter of the second row
 fillcolor('#EE3FB0')
 penup()
-goto(-265, -115)
+goto(-265 * scale_factor, -115 * scale_factor)
 pendown()
 begin_fill()
 
@@ -79,56 +82,56 @@ end_fill()
 
 # Draw the 'Y' letter
 penup()
-goto(-137, -97)
+goto(-137 * scale_factor, -97 * scale_factor)
 pendown()
 begin_fill()
 
 # Draw the 'Y' letter
-forward(23)
+forward(23 * scale_factor)
 left(-45)
-forward(120)
+forward(120 * scale_factor)
 left(90)
-forward(120)
+forward(120 * scale_factor)
 left(-45)
-forward(23)
+forward(23 * scale_factor)
 left(225)
-forward(140)
+forward(140 * scale_factor)
 left(45)
-forward(135)
+forward(135 * scale_factor)
 left(-90)
-forward(18)
+forward(18 * scale_factor)
 left(-90)
-forward(135)
+forward(135 * scale_factor)
 left(45)
-forward(140)
+forward(140 * scale_factor)
 
 end_fill()
 
 # Draw the second 'Y' letter
 penup()
-goto(85, -97)
+goto(85 * scale_factor, -97 * scale_factor)
 pendown()
 begin_fill()
 
 # Draw the 'Y' letter
 left(-135)
-forward(23)
+forward(23 * scale_factor)
 left(-45)
-forward(120)
+forward(120 * scale_factor)
 left(90)
-forward(120)
+forward(120 * scale_factor)
 left(-45)
-forward(23)
+forward(23 * scale_factor)
 left(225)
-forward(140)
+forward(140 * scale_factor)
 left(45)
-forward(135)
+forward(135 * scale_factor)
 left(-90)
-forward(18)
+forward(18 * scale_factor)
 left(-90)
-forward(135)
+forward(135 * scale_factor)
 left(45)
-forward(140)
+forward(140 * scale_factor)
 
 end_fill()
 
