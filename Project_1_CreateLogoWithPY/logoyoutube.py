@@ -38,3 +38,6 @@ end_fill()  # End filling the color
 hideturtle()  # Hide the turtle
 
 done()  # Close the turtle graphics window
+
+# Adding shape transformation to the whole drawing
+shapetransform(((0.8, 0), (0, 1.2), (0, 0), (0, 0), (0, 0)))

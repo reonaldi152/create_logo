@@ -153,3 +153,6 @@ end_fill()
 hideturtle()  # Hide the turtle
 
 done()
+
+# Adding shape transformation to the whole drawing
+shapetransform(((0.8, 0), (0, 1.2), (0, 0), (0, 0), (0, 0)))

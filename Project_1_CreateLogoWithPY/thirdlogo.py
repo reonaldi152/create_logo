@@ -1,4 +1,4 @@
-from turtle import *  # Import the turtle module
+from turtle import *
 
 # Define a scaling factor
 scale_factor = 0.5  # Adjust this as needed
@@ -107,31 +107,20 @@ forward(140 * scale_factor)
 
 end_fill()
 
-# Draw the second 'Y' letter
+# Draw the second 'Y' letter with rotation and scaling using shapetransform()
 penup()
 goto(85 * scale_factor, -97 * scale_factor)
 pendown()
 begin_fill()
 
-# Draw the 'Y' letter
-left(-135)
-forward(23 * scale_factor)
-left(-45)
-forward(120 * scale_factor)
-left(90)
-forward(120 * scale_factor)
-left(-45)
-forward(23 * scale_factor)
-left(225)
-forward(140 * scale_factor)
-left(45)
-forward(135 * scale_factor)
-left(-90)
-forward(18 * scale_factor)
-left(-90)
-forward(135 * scale_factor)
-left(45)
-forward(140 * scale_factor)
+# Define the shape for the second 'Y' letter
+second_Y_shape = ((0, 0), (0.2, 0.2), (0, 0.6), (-0.2, 0.2), (0, 0))
+
+# Apply rotation and scaling to the shape
+shapetransform(((0.8, 0), (0, 1.2), (0, 0), (0, 0), (0, 0)))
+
+# Set the shape
+shape(second_Y_shape)
 
 end_fill()
 
